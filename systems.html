@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en" data-lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="社会模拟器、社会 AI Data、社会世界模型与计算实验基础设施。"
+    />
+    <meta name="theme-color" content="#141918" />
+    <title>系统与数据 | 林镇阳</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body
+    data-title-zh="系统与数据 | 林镇阳"
+    data-title-en="Systems &amp; Data | Zhenyang Lin"
+  >
+    <a class="skip-link" href="#main-content">
+      <span class="lang-zh">跳至主要内容</span>
+      <span class="lang-en">Skip to content</span>
+    </a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="林镇阳个人网站首页">
+          <span class="brand-mark">ZL</span>
+          <span class="brand-copy">
+            <span class="brand-name">
+              <span class="lang-zh">林镇阳</span>
+              <span class="lang-en">Zhenyang Lin</span>
+            </span>
+            <span class="brand-field">
+              <span class="lang-zh">社会世界模型</span>
+              <span class="lang-en">Social World Models</span>
+            </span>
+          </span>
+        </a>
+        <nav
+          class="site-nav"
+          id="site-navigation"
+          data-site-nav
+          aria-label="Main navigation"
+        >
+          <a href="index.html">
+            <span class="lang-zh">首页</span>
+            <span class="lang-en">Home</span>
+          </a>
+          <a href="research.html">
+            <span class="lang-zh">研究</span>
+            <span class="lang-en">Research</span>
+          </a>
+          <a href="systems.html" aria-current="page">
+            <span class="lang-zh">系统与数据</span>
+            <span class="lang-en">Systems &amp; Data</span>
+          </a>
+          <a href="publications.html">
+            <span class="lang-zh">论文</span>
+            <span class="lang-en">Publications</span>
+          </a>
+          <a href="impact.html">
+            <span class="lang-zh">成果转化</span>
+            <span class="lang-en">Impact</span>
+          </a>
+          <a href="join.html">
+            <span class="lang-zh">加入我们</span>
+            <span class="lang-en">Join</span>
+          </a>
+        </nav>
+        <div class="nav-tools">
+          <a
+            class="icon-button"
+            href="mailto:linzhenyang@bza.edu.cn"
+            aria-label="发送邮件"
+            title="Email"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4 6h16v12H4zM4 7l8 6 8-6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <button
+            class="language-button"
+            type="button"
+            data-language-toggle
+            aria-label="Switch to English"
+          >
+            EN
+          </button>
+          <button
+            class="menu-button"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="site-navigation"
+            aria-label="打开导航菜单"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="page-shell page-hero-grid">
+          <div>
+            <span class="page-number">02 / 05</span>
+            <h1 class="page-title">
+              <span class="lang-zh">系统与数据</span>
+              <span class="lang-en">Systems &amp; Data</span>
+            </h1>
+          </div>
+          <p class="page-intro">
+            <span class="lang-zh"
+              >把理论假设转化为可运行、可观察和可复现的计算实验。系统不是研究结果的包装，而是检验社会机制、生成高质量数据和连接现实反馈的实验装置。</span
+            >
+            <span class="lang-en"
+              >We turn theoretical assumptions into runnable, observable, and
+              reproducible experiments. Systems are instruments for testing
+              mechanisms, generating data, and connecting real-world
+              feedback.</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">
+                <span class="lang-zh">实验闭环</span>
+                <span class="lang-en">Experimental loop</span>
+              </p>
+              <h2 class="section-title">
+                <span class="lang-zh">从社会信号到机制解释</span>
+                <span class="lang-en"
+                  >From social signals to mechanistic explanation</span
+                >
+              </h2>
+            </div>
+            <p class="section-lead">
+              <span class="lang-zh"
+                >通过数据融合感知社会状态，借助多智能体系统复现传播与互动过程，再将模拟结果与现实观测对齐，迭代模型假设。</span
+              >
+              <span class="lang-en"
+                >Data fusion estimates social states, multi-agent systems
+                reproduce interaction and diffusion, and observations calibrate
+                the resulting model hypotheses.</span
+              >
+            </p>
+          </div>
+          <figure class="figure-wide reveal">
+            <div class="figure-frame">
+              <img
+                class="lang-zh"
+                src="assets/images/transmission-chain-clean.png"
+                alt="社会信息传导链多智能体模拟示意图"
+              />
+              <div
+                class="concept-diagram lang-en"
+                role="img"
+                aria-label="Social intervention transmission chain"
+              >
+                <header class="diagram-header">
+                  <p class="diagram-kicker">Data engine</p>
+                  <h3>Capturing the transmission chain of social interventions</h3>
+                  <p>
+                    Record how an intervention travels through perception,
+                    behavior, interaction, and feedback without assuming a fixed
+                    causal mechanism in advance.
+                  </p>
+                </header>
+                <div class="diagram-flow" aria-label="Transmission chain">
+                  <div class="flow-node"><b>01</b><span>Initial state</span></div>
+                  <div class="flow-node">
+                    <b>02</b><span>Event / intervention</span>
+                  </div>
+                  <div class="flow-node"><b>03</b><span>Perception</span></div>
+                  <div class="flow-node"><b>04</b><span>Response</span></div>
+                  <div class="flow-node"><b>05</b><span>Interaction</span></div>
+                  <div class="flow-node"><b>06</b><span>Outcome</span></div>
+                  <div class="flow-node flow-node-accent">
+                    <b>07</b><span>Calibration residual</span>
+                  </div>
+                </div>
+                <div class="diagram-split">
+                  <div>
+                    <span class="diagram-label">Alternative interpretations</span>
+                    <div class="interpretation-list">
+                      <span>Support</span>
+                      <span>Observe</span>
+                      <span>Oppose</span>
+                      <span>Remain silent</span>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="diagram-label">Branching outcomes</span>
+                    <div class="result-list">
+                      <span>Outcome A</span>
+                      <span>Outcome B</span>
+                      <span>Outcome C</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="diagram-pipeline">
+                  <span>Real transmission chain</span>
+                  <span>Agent initialization</span>
+                  <span>Social simulation</span>
+                  <span>Observation comparison</span>
+                  <span>Residual feedback</span>
+                </div>
+                <p class="diagram-footer">
+                  Traditional data records results. Transmission-chain data
+                  records how society arrived there.
+                </p>
+              </div>
+            </div>
+            <figcaption>
+              <span class="lang-zh"
+                >社会信息传导链模拟示意：从多源信号融合到异质主体交互与推演。图示源自鉴远智能2026年8月对外介绍材料。</span
+              >
+              <span class="lang-en"
+                >Illustration of an information transmission simulation, from
+                multi-source signal fusion to heterogeneous agent interaction.
+                Source: Jianyuan Intelligence public introduction, August
+                2026.</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">
+                <span class="lang-zh">建设方向</span>
+                <span class="lang-en">Systems agenda</span>
+              </p>
+              <h2 class="section-title">
+                <span class="lang-zh">可积累的研究基础设施</span>
+                <span class="lang-en">Cumulative research infrastructure</span>
+              </h2>
+            </div>
+            <p class="section-lead">
+              <span class="lang-zh"
+                >以下名称代表正在推进或规划中的研究模块。具体开源范围、版本与合作方式将随项目进展更新。</span
+              >
+              <span class="lang-en"
+                >The following modules are in progress or planned. Open-source
+                scope, versions, and collaboration details will be updated as
+                the work develops.</span
+              >
+            </p>
+          </div>
+
+          <div class="system-map reveal">
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">在研</span>
+                <span class="lang-en">In progress</span>
+              </span>
+              <h3>ABSClaw</h3>
+              <p>
+                <span class="lang-zh"
+                  >面向复杂社会系统的大规模智能体仿真基础设施，研究智能体组织、并行调度、状态管理与实验复现。</span
+                >
+                <span class="lang-en"
+                  >Infrastructure for large-scale agent-based social
+                  simulation, including orchestration, parallel scheduling,
+                  state management, and reproducibility.</span
+                >
+              </p>
+            </article>
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">方法框架</span>
+                <span class="lang-en">Method framework</span>
+              </span>
+              <h3>
+                <span class="lang-zh">社会世界模型实验台</span>
+                <span class="lang-en">Social World Model Lab</span>
+              </h3>
+              <p>
+                <span class="lang-zh"
+                  >连接状态表征、动力学模型、反事实实验和现实校准的统一研究流程。</span
+                >
+                <span class="lang-en"
+                  >A unified workflow connecting state representation,
+                  dynamics, counterfactual experiments, and calibration.</span
+                >
+              </p>
+            </article>
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">数据方向</span>
+                <span class="lang-en">Data track</span>
+              </span>
+              <h3>Social AI Data</h3>
+              <p>
+                <span class="lang-zh"
+                  >沉淀主体轨迹、互动链、机制标注与环境反馈，建立数据质量、版本管理和评测规范。</span
+                >
+                <span class="lang-en"
+                  >Agent trajectories, interaction chains, mechanism labels,
+                  environmental feedback, quality control, versioning, and
+                  evaluation.</span
+                >
+              </p>
+            </article>
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">评测方向</span>
+                <span class="lang-en">Evaluation track</span>
+              </span>
+              <h3>
+                <span class="lang-zh">社会模拟评测基准</span>
+                <span class="lang-en">Social Simulation Benchmarks</span>
+              </h3>
+              <p>
+                <span class="lang-zh"
+                  >评估行为真实性、机制一致性、宏观涌现、跨场景泛化和不确定性表达。</span
+                >
+                <span class="lang-en"
+                  >Evaluating behavioral realism, mechanism consistency,
+                  emergence, cross-context generalization, and uncertainty.</span
+                >
+              </p>
+            </article>
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">应用实验</span>
+                <span class="lang-en">Applied experiments</span>
+              </span>
+              <h3>Policy Lab</h3>
+              <p>
+                <span class="lang-zh"
+                  >面向政策与治理问题的可审计计算实验环境，记录假设、干预、结果和风险边界。</span
+                >
+                <span class="lang-en"
+                  >An auditable environment for policy and governance
+                  experiments, documenting assumptions, interventions, results,
+                  and risk boundaries.</span
+                >
+              </p>
+            </article>
+            <article class="system-card">
+              <span class="system-status">
+                <span class="lang-zh">工具链</span>
+                <span class="lang-en">Toolchain</span>
+              </span>
+              <h3>
+                <span class="lang-zh">可信数据空间工具</span>
+                <span class="lang-en">Trusted Data Space Tools</span>
+              </h3>
+              <p>
+                <span class="lang-zh"
+                  >研究数据确权、授权、路由、审计与高质量数据集运营，为社会数据协作提供基础能力。</span
+                >
+                <span class="lang-en"
+                  >Tools for data authorization, routing, audit, and
+                  high-quality dataset operations in collaborative social data
+                  settings.</span
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">
+                <span class="lang-zh">技术栈</span>
+                <span class="lang-en">Research stack</span>
+              </p>
+              <h2 class="section-title">
+                <span class="lang-zh">贯穿数据、模型、实验与评估</span>
+                <span class="lang-en"
+                  >Across data, models, experiments, evaluation</span
+                >
+              </h2>
+            </div>
+            <p class="section-lead">
+              <span class="lang-zh"
+                >课题组将围绕完整实验生命周期建设工具，而非只优化单一模型指标。</span
+              >
+              <span class="lang-en"
+                >The group builds for the full experimental lifecycle rather
+                than optimizing a single model metric.</span
+              >
+            </p>
+          </div>
+          <div class="stack reveal">
+            <article class="stack-item">
+              <span>01</span>
+              <h3>
+                <span class="lang-zh">数据层</span>
+                <span class="lang-en">Data</span>
+              </h3>
+              <p>
+                <span class="lang-zh">现实观测、合成轨迹、机制标注与版本治理。</span>
+                <span class="lang-en"
+                  >Observation, synthetic trajectories, labels, versioning.</span
+                >
+              </p>
+            </article>
+            <article class="stack-item">
+              <span>02</span>
+              <h3>
+                <span class="lang-zh">主体层</span>
+                <span class="lang-en">Agents</span>
+              </h3>
+              <p>
+                <span class="lang-zh">认知、记忆、关系、偏好、资源与制度约束。</span>
+                <span class="lang-en"
+                  >Cognition, memory, relations, preferences, constraints.</span
+                >
+              </p>
+            </article>
+            <article class="stack-item">
+              <span>03</span>
+              <h3>
+                <span class="lang-zh">环境层</span>
+                <span class="lang-en">Environment</span>
+              </h3>
+              <p>
+                <span class="lang-zh">网络、事件、规则、组织和多尺度社会场景。</span>
+                <span class="lang-en"
+                  >Networks, events, rules, organizations, social contexts.</span
+                >
+              </p>
+            </article>
+            <article class="stack-item">
+              <span>04</span>
+              <h3>
+                <span class="lang-zh">实验层</span>
+                <span class="lang-en">Experiments</span>
+              </h3>
+              <p>
+                <span class="lang-zh">基线、干预、对照、反事实与敏感性分析。</span>
+                <span class="lang-en"
+                  >Baselines, interventions, controls, counterfactuals.</span
+                >
+              </p>
+            </article>
+            <article class="stack-item">
+              <span>05</span>
+              <h3>
+                <span class="lang-zh">评估层</span>
+                <span class="lang-en">Evaluation</span>
+              </h3>
+              <p>
+                <span class="lang-zh">微观行为、宏观统计、机制一致性与风险审计。</span>
+                <span class="lang-en"
+                  >Micro behavior, macro statistics, mechanisms, risk audit.</span
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">
+                <span class="lang-zh">可复现性</span>
+                <span class="lang-en">Reproducibility</span>
+              </p>
+              <h2 class="section-title">
+                <span class="lang-zh">让社会模拟成为可积累的科学工作</span>
+                <span class="lang-en"
+                  >Making social simulation cumulative science</span
+                >
+              </h2>
+            </div>
+            <p class="section-lead">
+              <span class="lang-zh"
+                >我们计划为公开项目提供清晰的模型卡、数据说明、实验配置、评估协议和版本记录；涉及现实数据时，优先满足隐私、授权与合规要求。</span
+              >
+              <span class="lang-en"
+                >Public projects will aim to provide model cards, data
+                statements, experiment configurations, evaluation protocols,
+                and version histories, with privacy and authorization taking
+                priority for real-world data.</span
+              >
+            </p>
+          </div>
+          <div class="principle-grid reveal">
+            <article class="principle">
+              <h3>
+                <span class="lang-zh">模型卡</span>
+                <span class="lang-en">Model cards</span>
+              </h3>
+              <p>
+                <span class="lang-zh">说明能力、训练来源、适用范围和失败模式。</span>
+                <span class="lang-en"
+                  >Capabilities, provenance, scope, and failure modes.</span
+                >
+              </p>
+            </article>
+            <article class="principle">
+              <h3>
+                <span class="lang-zh">数据说明</span>
+                <span class="lang-en">Data statements</span>
+              </h3>
+              <p>
+                <span class="lang-zh">记录来源、处理流程、偏差和授权边界。</span>
+                <span class="lang-en"
+                  >Sources, processing, biases, and authorization.</span
+                >
+              </p>
+            </article>
+            <article class="principle">
+              <h3>
+                <span class="lang-zh">实验配方</span>
+                <span class="lang-en">Experiment recipes</span>
+              </h3>
+              <p>
+                <span class="lang-zh">保留参数、随机种子、环境与运行记录。</span>
+                <span class="lang-en"
+                  >Parameters, seeds, environments, and run logs.</span
+                >
+              </p>
+            </article>
+            <article class="principle">
+              <h3>
+                <span class="lang-zh">评估协议</span>
+                <span class="lang-en">Evaluation protocols</span>
+              </h3>
+              <p>
+                <span class="lang-zh">同时评估拟合、机制、泛化和社会风险。</span>
+                <span class="lang-en"
+                  >Fit, mechanisms, generalization, and social risk.</span
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="page-shell cta-layout">
+          <div>
+            <h2>
+              <span class="lang-zh">寻找愿意把模型真正跑起来的同学</span>
+              <span class="lang-en"
+                >Looking for students who want to make models run</span
+              >
+            </h2>
+            <p>
+              <span class="lang-zh"
+                >算法、系统、数据、复杂网络与社会科学背景都可以找到明确的研究切口。</span
+              >
+              <span class="lang-en"
+                >There are concrete entry points for backgrounds in algorithms,
+                systems, data, complex networks, and social science.</span
+              >
+            </p>
+          </div>
+          <a class="button button-light" href="join.html">
+            <span class="lang-zh">加入我们</span>
+            <span class="lang-en">Join us</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell">
+        <div class="footer-grid">
+          <div>
+            <h2 class="footer-name">
+              <span class="lang-zh">林镇阳</span>
+              <span class="lang-en">Zhenyang Lin</span>
+            </h2>
+            <p class="footer-description">
+              <span class="lang-zh"
+                >北京中关村学院导师，北京中关村学院&amp;中关村人工智能研究院研究员，研究社会世界模型、多智能体社会模拟、社会
+                AI Data 与计算治理。</span
+              >
+              <span class="lang-en"
+                >Faculty at Beijing Zhongguancun Academy; researcher at Beijing
+                Zhongguancun Academy &amp; the Zhongguancun Institute of
+                Artificial Intelligence; working on social world models,
+                multi-agent simulation, social AI data, and computational
+                governance.</span
+              >
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>
+              <span class="lang-zh">联系</span>
+              <span class="lang-en">Contact</span>
+            </h3>
+            <a href="mailto:linzhenyang@bza.edu.cn">linzhenyang@bza.edu.cn</a>
+            <a href="mailto:lin-zy15@tsinghua.org.cn"
+              >lin-zy15@tsinghua.org.cn</a
+            >
+          </div>
+          <div class="footer-column">
+            <h3>
+              <span class="lang-zh">相关链接</span>
+              <span class="lang-en">Links</span>
+            </h3>
+            <a href="https://www.bza.edu.cn/faculty">
+              <span class="lang-zh">北京中关村学院导师页</span>
+              <span class="lang-en">BZA faculty directory</span>
+            </a>
+            <a href="join.html">
+              <span class="lang-zh">加入课题组</span>
+              <span class="lang-en">Join the group</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-current-year>2026</span>
+            <span class="lang-zh">林镇阳</span
+            ><span class="lang-en">Zhenyang Lin</span></span
+          >
+          <span>
+            <span class="lang-zh">最后更新：2026年8月</span>
+            <span class="lang-en">Last updated: August 2026</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
