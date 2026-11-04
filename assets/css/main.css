@@ -2648,6 +2648,52 @@ figcaption {
   }
 }
 
+.visitor-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 28px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.visitor-stats-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
+.visitor-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.visitor-stat strong {
+  color: var(--teal);
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+}
+
+.visitor-stats-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.visitor-stats-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
